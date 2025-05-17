@@ -1,14 +1,15 @@
 name: Sample job on push to main
 
-runs_on:
+on:
    push:
       branches: [main]
 
 jobs:
    build:
+     runs-on: ubuntu-latest
      steps:
-      - name: Checkout repo
-        uses: actions/Checkout@v2
-      
-      - name: sample commands
-        run: echo "hello"
+        - uses: actions/Checkout@v2
+        - name: Checkout repo
+         
+        - name: sample commands
+          run: echo "hello"
