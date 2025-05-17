@@ -1,0 +1,14 @@
+name: Sample job on push to main
+
+runs_on:
+   push:
+      branches: [main]
+
+jobs:
+   build:
+     steps:
+      - name: Checkout repo
+        uses: actions/Checkout@v2
+      
+      - name: sample commands
+        run: echo "hello"
