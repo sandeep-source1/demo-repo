@@ -9,7 +9,5 @@ jobs:
      runs-on: ubuntu-latest
      steps:
         - uses: actions/Checkout@v2
-        - name: Checkout repo
-         
         - name: sample commands
           run: echo "hello"
