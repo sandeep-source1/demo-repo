@@ -34,4 +34,4 @@ jobs:
         run: |
           docker login -u ${{secrets.docker_username}} -p ${{secrets.docker_pat}}
           docker build -t demorepo/app . 
-          docker push demorepo/ap
+          docker push demorepo/app
